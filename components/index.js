@@ -17,14 +17,14 @@
      return (
        <View style={styles.container}>
         <Image
-          style={styles.logo}
-          source={{ uri: 'asset:/logo.PNG' }}
+          source={{ uri: 'logo.png' }}
+          //style={styles.logo}
         />
          <Text style={styles.welcome}>
            Cerealis Coloring AR!
          </Text>
-         <Button onPress={()=> navigation.navigate('Share')} title="Demarrer" buttonStyle={{ backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30, }} containerStyle={{ width: 200, marginHorizontal: 50,  marginVertical: 10, }} titleStyle={{ fontWeight: 'bold' }} 
-        />
+         <Button onPress={()=> navigation.navigate('Share')} title="Demarrer" buttonStyle={{ backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30, }} containerStyle={{ width: 200, marginHorizontal: 50,  marginVertical: 10, }} titleStyle={{ fontWeight: 'bold' }} />
+        <Button onPress={()=> navigation.navigate('react')} title="A propos" />
        </View>
      );
    };
@@ -49,6 +49,10 @@
    logo: {
     height: 50,
     width: 50,
+  },
+  apropos: {
+    left: 20,
+    bottom: 20,
   },
  });
  

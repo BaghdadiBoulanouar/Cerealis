@@ -13,6 +13,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Share from './components/Share'
 import index from './components/index'
+import react from './components/react'
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +30,11 @@ const App: () => Node = () => {
           name="Share"
           component={Share}
           options={{ title: 'Partager' }}
+        />
+        <Stack.Screen
+          name="react"
+          component={react}
+          options={{ title: 'React' }}
         />
       </Stack.Navigator>
     </NavigationContainer>
