@@ -23,8 +23,10 @@
          <Text style={styles.welcome}>
            Cerealis Coloring AR!
          </Text>
-         <Button onPress={()=> navigation.navigate('Share')} title="Demarrer" buttonStyle={{ backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30, }} containerStyle={{ width: 200, marginHorizontal: 50,  marginVertical: 10, }} titleStyle={{ fontWeight: 'bold' }} />
-        <Button onPress={()=> navigation.navigate('react')} title="A propos" />
+         <Button onPress={()=> navigation.navigate('formulaire')} title="Demarrer" buttonStyle={{ backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30, }} containerStyle={{ width: 200, marginHorizontal: 50,  marginVertical: 10, }} titleStyle={{ fontWeight: 'bold' }} />
+        <Text onPress={()=> navigation.navigate('react')} >A propos</Text>
+        <Text onPress={()=> navigation.navigate('react')} >Mentions légales</Text>
+        <Text onPress={()=> navigation.navigate('Share')} >A propos</Text>
        </View>
      );
    };
