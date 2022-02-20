@@ -15,19 +15,19 @@
  
  const HomeScreen = ({navigation}) => {
      return (
-       <View style={styles.container}>
-        <Image
-          source={{ uri: 'logo.png' }}
-          //style={styles.logo}
-        />
-         <Text style={styles.welcome}>
+      <View style={styles.container}>
+        <Image source={require('../medias/logo.jpg')} /> 
+        <Text style={styles.welcome}>
            Cerealis Coloring AR!
-         </Text>
-         <Button onPress={()=> navigation.navigate('formulaire')} title="Demarrer" buttonStyle={{ backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30, }} containerStyle={{ width: 200, marginHorizontal: 50,  marginVertical: 10, }} titleStyle={{ fontWeight: 'bold' }} />
-        <Text onPress={()=> navigation.navigate('react')} >A propos</Text>
-        <Text onPress={()=> navigation.navigate('react')} >Mentions légales</Text>
-        <Text onPress={()=> navigation.navigate('Share')} >A propos</Text>
-       </View>
+        </Text>
+        <Button onPress={()=> navigation.navigate('formulaire')} title="Demarrer" buttonStyle={{ backgroundColor: 'black', borderWidth: 2, borderColor: 'white', borderRadius: 30, }} containerStyle={{ width: 200, marginHorizontal: 50,  marginVertical: 10, }} titleStyle={{ fontWeight: 'bold' }} />
+        <Image source={require('../medias/devfodes.png')} style={styles.logo} /> 
+        <View style={styles.view2}>
+          <Text onPress={()=> navigation.navigate('react')} >A propos</Text>
+          <Text onPress={()=> navigation.navigate('react')} >Mentions légales</Text>
+          <Text onPress={()=> navigation.navigate('Share')} style={styles.apropos} >Nous contacter</Text>
+        </View>
+      </View>
      );
    };
  
@@ -49,13 +49,12 @@
      marginBottom: 5,
    },
    logo: {
-    height: 50,
-    width: 50,
-  },
-  apropos: {
-    left: 20,
-    bottom: 20,
-  },
+    width: 150,
+    height: 42,
+    marginTop: 100,
+    },
+    view2: {
+    }
  });
  
  export default HomeScreen;

@@ -20,6 +20,7 @@
 
      return (
        <View style={styles.container}>
+         <Image source={require('../medias/logo.jpg')} /> 
          <Text style={styles.welcome}>Cerealis Coloring AR!</Text>
          <Text style={styles.inputtitle}>Votre nom</Text>
          <TextInput style={styles.input} placeholder='Dupont'></TextInput>
