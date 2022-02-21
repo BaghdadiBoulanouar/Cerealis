@@ -43,6 +43,11 @@ const App: () => Node = () => {
           component={react}
           options={{title: 'React'}}
         />
+        <Stack.Screen
+          name="photo"
+          component={photo}
+          options={{title: 'Photo'}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
